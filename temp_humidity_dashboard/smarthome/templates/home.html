@@ -1,0 +1,25 @@
+{% extends './main.html' %}
+
+    {% block content %}
+    
+
+    <div class="container p-4">
+        
+        <div class="row p-5">
+            <h1 class="d-flex justify-content-center">This is the (smart)home page</h1>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                Col 1
+                {{ chart1|safe }}
+            </div>
+            <div class="col-6">
+                Col 2
+                {{ chart2|safe }}
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+
+</html>
